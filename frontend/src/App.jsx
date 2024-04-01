@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from './components/Layout/Layout'
 
-const App = () => {
+function App() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <Layout/>
     </div>
   )
 }
