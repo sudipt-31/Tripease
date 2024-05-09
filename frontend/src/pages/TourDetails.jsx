@@ -1,7 +1,7 @@
 import React,{useRef,useState} from "react";
 import "../styles/tour-details.css";
 import "../App.css"
-import { Container, Row, Col, Form, ListGroup } from "reactstrap";
+import { Container, Row, Col, Form, ListGroup,} from "reactstrap";
 import { useParams } from "react-router-dom";
 import tourData from "../assets/data/tours";
 import calculateAvgRating from "./../utils/avgRating";
@@ -148,6 +148,7 @@ const TourDetails = () => {
           </Row>
         </Container>
       </section>
+      {/* <Newsletter /> */}
     </>
   );
 };
