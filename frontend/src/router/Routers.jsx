@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom"; // Change BrowserRouter to Router
 import Home from "../pages/Home";

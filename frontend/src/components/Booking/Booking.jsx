@@ -4,7 +4,8 @@ import { Form, FormGroup, ListGroup, ListGroupItem, Button} from 'reactstrap';
 
 import { useNavigate } from "react-router-dom";
 
-const Booking = ({ tour,avgRating }) => {
+const Booking = ({ tour,avgRating }) => 
+  {
 
     const{ price, reviews}=tour;
 
@@ -23,10 +24,11 @@ const Booking = ({ tour,avgRating }) => {
     //Send data to the server
     const handelClick = e=>{
       e.preventDefault();
-      console.log(credentials);
-    }
-
-    navigate("/thank-you")
+      // console.log(credentials);
+      navigate("/thank-you")
+    };
+  
+    
     
   return (
     <div className="booking">
