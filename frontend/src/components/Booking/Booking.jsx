@@ -18,7 +18,7 @@ const Booking = ({ tour,avgRating }) =>
       setCredentials(prev=>({...prev, [e.target.id]:e.target.value}))
     };
 
-    const serviceFee=10;
+    const serviceFee=5000;
     const totalAmount=Number(price) * Number(credentials.guestSize)+Number(serviceFee);
 
     //Send data to the server
@@ -93,7 +93,7 @@ const Booking = ({ tour,avgRating }) =>
             </ListGroupItem>
             <ListGroupItem className='border-0 px-0'>
               <h5>Service Charge</h5>
-            <span>₹500</span>
+            <span>₹5000</span>
             </ListGroupItem>
             <ListGroupItem className='border-0 px-0 total'>
               <h5>Total</h5>
