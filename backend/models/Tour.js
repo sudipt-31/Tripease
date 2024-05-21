@@ -1,5 +1,16 @@
 import mongoose from "mongoose";
 
+const reviewSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  rating: {
+    type: Number,
+    required: true,
+  },
+});
+
 const tourSchema = new mongoose.Schema(
   {
     title: {
@@ -35,14 +46,7 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-
-    reviews: [
-      {
-        type: mongoose.Types.ObjectId,
-        ref: "Review",
-      },
-    ],
-
+    reviews: [reviewSchema],
     featured: {
       type: Boolean,
       default: false,

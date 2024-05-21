@@ -2,11 +2,11 @@
 {
   "title": "Westminster Bridge",
   "city": "London",
-  "address": "Somewhere in London",
+  "address": "Patia",
   "distance": 300,
-  "price": 99,
+  "price": 499,
   "maxGroupSize": 10,
-  "description": "This is the description",
+  "desc": "This is the description",
   "reviews": [
     {
       "name": "John Doe",
