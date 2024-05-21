@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "../styles/home.css";
 
@@ -5,7 +6,7 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
-import Subtitle from "./../shared/Subtile"; // Assuming the filename is correct
+import Subtitle from "./../shared/Subtile"; 
 import worldImg from "./../assets/images/world.png";
 import experiemceImg from "../assets/images/experience.png";
 import SearchBar from "../shared/SearchBar";

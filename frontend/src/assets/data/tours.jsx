@@ -11,9 +11,9 @@ const tours = [
     id: "01",
     title: "Westminister Bridge",
     city: "London",
-    distance: 300,
-    address:'Somewhere',
-    price: 99,
+    distance: 6800, // Distance from India to London (approx. in km)
+    address: 'Somewhere',
+    price: 70000, // Price in Indian Rupees
     maxGroupSize: 10,
     desc: "this is the description",
     reviews: [
@@ -30,9 +30,9 @@ const tours = [
     id: "02",
     title: "Bali, Indonesia",
     city: "Indonesia",
-    distance: 400,
-    address:'Somewhere',
-    price: 99,
+    distance: 5800, // Distance from India to Bali (approx. in km)
+    address: 'Somewhere',
+    price: 50000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -49,9 +49,9 @@ const tours = [
     id: "03",
     title: "Snowy Mountains, Thailand",
     city: "Thailand",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 4500, // Distance from India to Bangkok (approx. in km)
+    address: 'Somewhere',
+    price: 40000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -68,9 +68,9 @@ const tours = [
     id: "04",
     title: "Beautiful Sunrise, Thailand",
     city: "Thailand",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 4800, // Distance from India to Phuket (approx. in km)
+    address: 'Somewhere',
+    price: 45000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -87,9 +87,9 @@ const tours = [
     id: "05",
     title: "Nusa Pendia Bali, Indonesia",
     city: "Indonesia",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 5800, // Distance from India to Bali (approx. in km)
+    address: 'Somewhere',
+    price: 55000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -106,9 +106,9 @@ const tours = [
     id: "06",
     title: "Cherry Blossoms Spring",
     city: "Japan",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 7000, // Distance from India to Tokyo (approx. in km)
+    address: 'Somewhere',
+    price: 90000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -125,9 +125,9 @@ const tours = [
     id: "07",
     title: "Holmen Lofoten",
     city: "France",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 7500, // Distance from India to Paris (approx. in km)
+    address: 'Somewhere',
+    price: 80000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -144,9 +144,9 @@ const tours = [
     id: "08",
     title: "Snowy Mountains, Thailand",
     city: "Thailand",
-    distance: 500,
-    address:'Somewhere',
-    price: 99,
+    distance: 4500, // Distance from India to Bangkok (approx. in km)
+    address: 'Somewhere',
+    price: 42000, // Price in Indian Rupees
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
