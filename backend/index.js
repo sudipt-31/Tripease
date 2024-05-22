@@ -3,7 +3,10 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import tourRoute from "./routes/tours.js"; // Ensure the correct path and file extension
+
+import tourRoute from "./routes/tours.js"; 
+import userRoute from "./routes/users.js"
+import authRoute from "./routes/auth.js";
 
 dotenv.config();
 
@@ -28,7 +31,8 @@ app.use(cookieParser());
 
 // Routes
 app.use("/tours", tourRoute);
-
+app.use("/users", userRoute);
+app.use("auth",authRoute)
 // Root route
 app.get("/", (req, res) => {
   res.send("API is working");
