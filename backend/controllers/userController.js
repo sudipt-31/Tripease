@@ -1,101 +1,94 @@
 import User from "../models/User.js";
 
-
-// Create new tour
-export const createTour = async (req, res) => {
-  const newUser = new User(req.body);
-
+// Create new user
+export const createUser = async (req, res) => {
   try {
+    const newUser = new User(req.body);
     const savedUser = await newUser.save();
     res.status(200).json({
       success: true,
-      message: "Successfully created",
+      message: "User created successfully",
       data: savedUser,
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "Failed to create tour",
-      error: err.message, // Include the error message for better debugging
+      message: "Failed to create user",
+      error: err.message,
     });
   }
 };
 
-//update User
+// Update user
 export const updateUser = async (req, res) => {
   const id = req.params.id;
   try {
     const updatedUser = await User.findByIdAndUpdate(
       id,
-      {
-        $set: req.body,
-      },
+      { $set: req.body },
       { new: true }
     );
-
     res.status(200).json({
       success: true,
-      message: "Successfully updated",
-      data: updatedTour,
+      message: "User updated successfully",
+      data: updatedUser,
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "Failed to update",
+      message: "Failed to update user",
     });
   }
 };
-//delete tour
-export const deleteTour = async (req, res) => {
+
+// Delete user
+export const deleteUser = async (req, res) => {
+  const id = req.params.id;
   try {
-    await Tour.findByIdAndDelete(id);
-
+    await User.findByIdAndDelete(id);
     res.status(200).json({
       success: true,
-      message: "Successfully deleted",
+      message: "User deleted successfully",
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "Failed to deleted",
+      message: "Failed to delete user",
     });
   }
 };
 
-//getSingle user
+// Get single user
 export const getSingleUser = async (req, res) => {
-
-    const id=req.params.id;
+  const id = req.params.id;
   try {
-    const User = await User.findById(id);
-
+    const user = await User.findById(id);
     res.status(200).json({
       success: true,
-      message: "Successfully ",
-      data: User,
-    });
-  } catch (err) {
-    res.status(404).json({
-      success: false,
-      message: "not found ",
-    });
-  }
-};
-//getAll User
-export const getAllUser = async (req, res) => {
-  try {
-    const user = await User.find({});
-
-    res.status(200).json({
-      success: true,
-    
-      message: "Successful ",
+      message: "User found successfully",
       data: user,
     });
   } catch (err) {
     res.status(404).json({
       success: false,
-      message: "not found ",
+      message: "User not found",
+    });
+  }
+};
+
+// Get all users
+export const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find({});
+    res.status(200).json({
+      success: true,
+      message: "Users found successfully",
+      data: users,
+    });
+  } catch (err) {
+    res.status(404).json({
+      success: false,
+      message: "Users not found",
     });
   }
 };
