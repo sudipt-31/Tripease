@@ -3,13 +3,13 @@ import {
   updateUser,
   deleteUser,
   getSingleUser,
-  getAllUser,
-} from "../controllers/userController";
+  getAllUsers,
+} from "../controllers/userController.js";
 const router=express.Router()
 
 router.put("/:id", updateUser);
 router.delete("/:id", deleteUser);
 router.get("/:id", getSingleUser);
-router.get("/", getAllUser);
+router.get("/", getAllUsers);
 
 export default router

@@ -34,7 +34,7 @@ const TourDetails = () => {
   const submitHandler=e=>{
     e.preventDefault();
     const reviewText = reviewMsgRef.current.value;
-    // alert(`${reviewText}, ${tourRating}`)
+    alert(`${reviewText}, ${tourRating}`)
   }
 
   return (
