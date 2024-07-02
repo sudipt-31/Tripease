@@ -1,21 +1,23 @@
 [
-  {
-    "title": "Westminster Bridge",
-    "city": "London",
-    "address": "Somewhere in London",
-    "distance": 6800, 
-    "price": 70000, 
-    "maxGroupSize": 10,
-    "description": "This is the description",
-    "reviews": [
-      {
-        "name": "John Doe",
-        "rating": 4.6
-      }
-    ],
-    "photo": "/tour-images/tour-img01.jpg",
-    "featured": true
-  },
+{
+  "title": "Westminster Bridge",
+  "city": "London",
+  "address": "Somewhere in London",
+  "distance": 6800,
+  "price": 70000,
+  "maxGroupSize": 10,
+  "desc": "This is the description",
+  "reviews": [
+    {
+      "name": "John Doe",
+      "rating": 4.6
+    }
+  ],
+  "photo": "/tour-images/tour-img01.jpg",
+  "featured": true
+},
+
+
   {
     "title": "Bali, Indonesia",
     "city": "Bali",
